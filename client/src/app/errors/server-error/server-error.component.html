@@ -1,0 +1,21 @@
+<h4 class="">
+  Internal server error - Refresh the page will make the error disappear
+</h4>
+
+<ng-container>
+  <h5 class="text-danger">Error: {{ error.message }}</h5>
+  <p class="font-weight-bold">
+    Note: If you are seeing this then ANgular is not responsible.
+  </p>
+  <p>What to do next?</p>
+  <ol>
+    <li>Open the chrome dev tools</li>
+    <li>Inspect the network tab</li>
+    <li>Check the failing request</li>
+    <li>Examine the request URL - make sure it is correct</li>
+    <li>Reporduce the error in Postman</li>
+  </ol>
+
+  <p>Trace</p>
+  <code class="mt-5">{{ error.details }}</code>
+</ng-container>
